@@ -8,7 +8,7 @@
 
 ### About the Experiment 
 
-This experiment explores the natural cycle between predator and prey populations by introducing two realistic limits: the environment's carrying capacity for prey and the feeding limits (satiation) of predators. Using the interactive simulator, you will adjust these natural boundaries to observe whether the species find a stable balance, continuously cycle, or crash into extinction.
+This experiment explores how "sit-and-wait" predators conserve energy by staying completely still and ambushing passing prey. Using the simulation, you will discover how these animals decide exactly when to strike and which prey to target to get the maximum energy reward for their effort.
 
 <b>Name of Developer | <b> Dr. Shyam Diwakar 
 :--|:--|
