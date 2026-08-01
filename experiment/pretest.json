@@ -3,26 +3,26 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "1. ",
+      "question": "1. Which of the following characteristics are generally associated with the foraging mode of an organism?",
       "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Reproductive effort",
+        "b": "Risk of predation",
+        "c": "Locomotor mode",
+        "d": "All the above"
       },
  
-      "correctAnswer": "a",
+      "correctAnswer": "d",
       "difficulty": "beginner"
     },   
 
 
     {
-      "question": "2. :",
+      "question": "2. An organism with a sit-and-wait foraging strategy is mostly relying on:",
       "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Moving preys",
+        "b": "High prey density",
+        "c": "All the above",
+        "d": "None of the above"
       },
       
       "correctAnswer": "c",
@@ -32,44 +32,27 @@
 
     
     {
-      "question": "3.  ",
+      "question": "3. What is the effect of size of the foraging area on the energy spent in waiting and pursuit of the prey?",
       "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Increasing the size of the foraging area increases the average time and energy spent in capturing the prey",
+        "b": "Increasing the size of the foraging area increases the time and energy spent in waiting for a prey",
+        "c": "Both of the above",
+        "d": "No relation between size of the foraging area and waiting time and energy spent"
       },
       
-      "correctAnswer": "b",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     },
 
 
  
     {
-      "question": "4. :",
+      "question": "4. When compared with searching predators, the energetic requirements of sit-and wait predators should be:",
       "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Higher",
+        "b": "Lower"
       },
       
-      "correctAnswer": "b",
-      "difficulty": "beginner"
-    },
-
-
-
-    {
-      "question": "5. ",
-      "answers": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
-      },
-     
       "correctAnswer": "b",
       "difficulty": "beginner"
     }
