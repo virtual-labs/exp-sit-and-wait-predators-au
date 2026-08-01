@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Optimal Foraging — Sit-and-Wait Predators (Maximise Energy) — Simulation</title>
+<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<div class="card" id="simbox">
+<div class="simbar"><span class="simbar-logo" aria-hidden="true"><img src="images\logo.svg" alt="Amrita Vishwa Vidyapeetham"></span><h1 class="simbar-title">Optimal Foraging — Sit-and-Wait Predators (Maximise Energy)</h1><button class="fs-btn" id="fsBtn" onclick="toggleFS()" title="Toggle full screen" aria-label="Toggle full screen">⛶</button></div>
+<div class="sim">
+<div class="controls">
+<p class="subnote">Clean reconstruction: the original Flash version's numerical integration was buggy (a non-reset accumulator). This uses the standard sit-and-wait relations, so the energy-gain curve has a well-defined optimum.</p>
+<label style="font-weight:600;font-size:.9rem;display:block;margin-bottom:6px">Plot</label>
+<select class="dropBox" id="plotMode" onchange="run()">
+  <option value="wait">Waiting time per prey (reciprocal proportion)</option>
+  <option value="pursue">Average pursuit time per prey</option>
+  <option value="energy">Net energy gain per time</option>
+</select>
+<div class="field"><label>Abundance of prey a <span class="val" id="v_a">0.1</span></label><input type="range" id="a" min="0.01" max="1" step="0.01" value="0.1" oninput="sync()"></div>
+<div class="field"><label>Prey velocity v <span class="val" id="v_v">10</span></label><input type="range" id="v" min="1" max="100" step="1" value="10" oninput="sync()"></div>
+<div class="field"><label>Energy content per prey (e) <span class="val" id="v_EC">250</span></label><input type="range" id="EC" min="50" max="1000" step="10" value="250" oninput="sync()"></div>
+<div class="field"><label>Energy burned while waiting (ew) <span class="val" id="v_EB">0.1</span></label><input type="range" id="EB" min="0.05" max="2" step="0.05" value="0.1" oninput="sync()"></div>
+<div class="field"><label>Cut-off radius: start <span class="val" id="v_start">1</span></label><input type="range" id="start" min="1" max="10" step="1" value="1" oninput="sync()"></div>
+<div class="field"><label>Cut-off radius: end <span class="val" id="v_end">20</span></label><input type="range" id="end" min="10" max="100" step="5" value="20" oninput="sync()"></div>
+<div class="btnrow">
+  <button class="btn btn-primary" onclick="run()">▶ Plot</button>
+  <button class="btn btn-ghost" onclick="resetSim()">↺ Reset</button>
+</div>
+<div class="dl-label">Download</div>
+<div class="btnrow">
+  <button class="btn btn-accent" onclick="downloadPNG('sit-and-wait.png')">⤓ PNG</button>
+  <button class="btn btn-accent" onclick="downloadCSV()">⤓ CSV</button>
+</div>
+</div>
+<div class="plotwrap">
+<div class="plot-title" id="plotTitle">Waiting time per prey</div>
+<canvas class="chart" id="chart" width="720" height="440"></canvas>
+<div class="legend" id="legend"></div>
+<div class="readout">Cursor: X = <b id="rx">–</b>, Y = <b id="ry">–</b></div>
+<div class="counts" id="counts"></div>
+</div>
+</div>
+</div>
+<div class="toast" id="toast"></div>
+<script src="./js/chart.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/main.js"></script>
+<script src="../assets/js/iframeResize.js"></script>
+        
+        </body>
+</html>
